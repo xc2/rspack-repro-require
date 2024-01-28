@@ -1,8 +1,16 @@
 (function() {
 var __webpack_modules__ = {
-"./src/index.js": (function () {
+"./src/foo.js": (function () {
+console.log('this should be required');
+}),
+"./src/index.js": (function (__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
 const r =  true && require;
 console.log(r('./foo'));
+if (true) console.log(__webpack_require__(/*! ./foo */"./src/foo.js"));
+if (true) {
+    const r = require;
+    console.log(r('./foo'));
+}
 }),
 
 }

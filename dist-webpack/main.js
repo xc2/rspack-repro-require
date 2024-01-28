@@ -45,9 +45,17 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 const r = undefined;
-
 console.log(__webpack_require__(/*! ./foo */ "./src/foo.js"))
 
+if (true) {
+    console.log(__webpack_require__(/*! ./foo */ "./src/foo.js"))
+}
+
+
+if (true) {
+    const r = undefined;
+    console.log(__webpack_require__(/*! ./foo */ "./src/foo.js"))
+}
 })();
 
 /******/ })()
